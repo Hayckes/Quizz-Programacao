@@ -147,3 +147,20 @@ body {
     background-color: #40B576;
     color: #FFF;
   }
+
+  /* RESPONSIVE */
+
+@media(max-width:450px) {
+    #quizz-container {
+      border: none;
+      width: 100%;
+    }
+  
+    #answers-box button {
+      width: 100%;
+    }
+  
+    #score-container {
+      width: 90%;
+    }
+  }
