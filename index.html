@@ -3,49 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="./js/index.js" defer></script>
-    <title>Quiz Programação</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quizz em JS!</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
   </head>
   <body>
-    <h1 id="main-title">Quizz Programação</h1>
-    <!-- SCORE BOARD -->
-    <div id="score-conteiner">
+    <h1 id="main-title">Quizz de programação!</h1>
+    <div id="score-container" class="hide">
+      <h2>Parabéns!</h2>
       <p id="display-score"><span>90</span>%</p>
       <p>
-        Você acertou <span id="correct-answer">0</span> de
-        <span id="quantions-qty">10</span>perguntas
+        Você acertou <span id="correct-answers">0</span> de
+        <span id="questions-qty">10</span> perguntas.
       </p>
-      <button id="restart">Refazer Quizz</button>
+      <button id="restart">Refazer quizz!</button>
     </div>
-    <!-- QUIZZ CONTEINER -->
-    <div id="quizz-conteiner">
+    <div id="quizz-container">
       <p id="question">
         <span id="question-number">1</span> -
         <span id="question-text">Qual é a unidade de medida para metros?</span>
       </p>
-      <div id="answer-box">
-      <button class="correct-answer">
-        <span class="btn-letter">a</span> 
-        <span class="question-answer">m</span>
-      </button class="wrong-answer">
-      <button>
-        <span class="btn-letter">b</span>
-        <span class="question-answer">km</span>
-      </button>
-      <button>
-        <span class="btn-letter">c</span>
-        <span class="question-answer">ms</span>
-      </button>
-      <button>
-        <span class="btn-letter">d</span> 
-        <span class="question-answer">r</span>
-      </button>
+      <div id="answers-box"></div>
     </div>
-    </div>
-    <!-- TAMPLATE ANSEWR -->
+
+    <!-- TEMPLATE RESPOSTA -->
     <button class="answer-template hide">
-      <span class="btn-letter">a</span> <span class="question-answer">m</span>
+      <span class="btn-letter"></span> <span class="question-answer"></span>
     </button>
   </body>
 </html>
